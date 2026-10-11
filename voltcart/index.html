@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voltcart | Gadget Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#" onclick="go('shop');return false" data-testid="logo">Voltcart</a>
+  <nav>
+    <button onclick="go('shop')" data-testid="nav-shop">Shop</button>
+    <button onclick="go('cart')" data-testid="nav-cart">Cart (<span id="cart-count">0</span>)</button>
+    <button onclick="go('orders')" data-testid="nav-orders">Orders</button>
+    <button onclick="go('auth')" id="nav-auth" data-testid="nav-auth">Log in</button>
+  </nav>
+</header>
+<div id="toast" role="status" data-testid="toast"></div>
+<main id="app"></main>
+<script src="app.js"></script>
+</body>
+</html>
